@@ -30,8 +30,8 @@
 (defmacro map-enums [enumclass]
   `(apply merge (map #(hash-map (keyword (.name %)) %) (~(symbol (apply str (name enumclass) "/values"))))))
 
-(def event-types (map-enums org.bukkit.event.Event$Type))
-(def event-priorities (map-enums org.bukkit.event.Event$Priority))
+(comment (def event-types (map-enums org.bukkit.event.Event$Type)))
+(def event-priorities (map-enums org.bukkit.event.EventPriority))
 
 (def plugins (ref {}))
 

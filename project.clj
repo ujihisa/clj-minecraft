@@ -4,7 +4,7 @@
                  [org.clojure/tools.logging "0.2.3"]
                  [swank-clojure/swank-clojure "1.3.3"]
                  ]
-  :dev-dependencies [[org.bukkit/bukkit "1.0.0-R1-SNAPSHOT"]]
+  :dev-dependencies [[org.bukkit/bukkit "1.2.3-R0"]]
 
   :repl-options [:init nil :caught clj-stacktrace.repl/pst+]
   :javac-options {:destdir "classes/"}
